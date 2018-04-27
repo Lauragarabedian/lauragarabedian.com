@@ -3,6 +3,8 @@ plugins:
 
 gallery:
   dir: gallery
+  title: "Art"
+  title_prefix: ""
   galleries:
     fantasy:
       name: "Fantasy"
