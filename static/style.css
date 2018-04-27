@@ -1,0 +1,18 @@
+body {
+    font-family: 'Marcellus SC', serif;
+}
+
+#side-bar-title { 
+    font-size: x-large;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-doc {
+    margin-top: 4rem;
+}

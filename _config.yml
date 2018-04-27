@@ -1,0 +1,8 @@
+plugins:
+  - jekyll-gallery-generator
+
+gallery:
+  dir: gallery
+  galleries:
+    fantasy:
+      name: "Fantasy"
