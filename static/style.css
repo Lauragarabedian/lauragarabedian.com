@@ -16,6 +16,10 @@ a:visited {
     text-align: center;
 }
 
+.copyright {
+    margin: 1rem;
+}
+
 .nav-link {
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -27,6 +31,15 @@ a:visited {
 
 
 .gallery-row {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin: 5rem;
+}
+
+.gallery-wrapper {
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.gallery-index-row {
+    margin-left: 5rem;
+    margin-bottom: 5rem;
 }

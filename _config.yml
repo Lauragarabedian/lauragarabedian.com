@@ -8,5 +8,9 @@ gallery:
   galleries:
     fantasy:
       name: "Fantasy"
+      best_image: SunSpots-cell-photo-562x800.jpg
     treecreatures:
       name: "Tree Creatures"
+      best_image: Equibark_LauraGarabedian.jpg
+    tribalizedcreatures:
+      name: "Tribalized Creatures"
