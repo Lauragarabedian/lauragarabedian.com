@@ -8,7 +8,7 @@ layout: page
 {% for image in page.images %}
     {% assign value = forloop.index | modulo:3 %}
     {% if value == 1 or forloop.first %}
-    <div class="row">
+    <div class="row gallery-row">
     {% endif %}
     <div class="mr-2 gallery-image-wrapper">
         <a name="{{ image.name }}"></a>
