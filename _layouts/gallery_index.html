@@ -2,6 +2,8 @@
 layout: page
 ---
 {% include header.html %}
+<h2>Gallery</h2>
+<hr />
 {% for gallery in page.galleries %}
 {% assign value = forloop.index | modulo:2 %}
 {% if value == 1 or forloop.first %}

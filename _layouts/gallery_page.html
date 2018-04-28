@@ -2,7 +2,7 @@
 layout: page
 ---
 {% include header.html %}
-<h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
+<h2><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h2>
 <hr />
 {% for image in page.images %}
     {% assign value = forloop.index | modulo:3 %}
