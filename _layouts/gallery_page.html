@@ -2,15 +2,23 @@
 layout: page
 ---
 {% include header.html %}
-</style>
 <h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
 <hr />
+<!-- <div class="container"> -->
 {% for image in page.images %}
-    <div class="gallery-image-wrapper">
+    {% assign value = forloop.index | modulo:3 %}
+    {% if value == 1 or forloop.first %}
+    <div class="row">
+    {% endif %}
+    <div class="mr-2 gallery-image-wrapper">
         <a name="{{ image.name }}"></a>
-        <a href="{{ image.name }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+        <a href="{{ image.name }}">
             <img class="gallery-image" src="thumbs/{{ image.name }}" />
         </a>
     </div>
+    {% if value == 0 or forloop.last %}
+    </div>
+    {% endif %}
 {% endfor %}
+<!-- /div> -->
 {% include footer.html %}
