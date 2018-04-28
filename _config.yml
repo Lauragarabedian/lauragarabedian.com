@@ -8,3 +8,5 @@ gallery:
   galleries:
     fantasy:
       name: "Fantasy"
+    treecreatures:
+      name: "Tree Creatures"
