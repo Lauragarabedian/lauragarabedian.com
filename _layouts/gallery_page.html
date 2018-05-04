@@ -7,12 +7,12 @@ layout: page
 {% for image in page.images %}
     {% assign value = forloop.index | modulo:3 %}
     {% if value == 1 or forloop.first %}
-    <div class="row gallery-row">
+    <div class="row">
     {% endif %}
-    <div class="col-sm">
+    <div class="col-md gallery-image">
         <a name="{{ image.name }}"></a>
         <a href="{{ image.name }}">
-            <img class="gallery-image mr-2 img-fluid" src="thumbs/{{ image.name }}" />
+            <img class="img-fluid" src="thumbs/{{ image.name }}" />
         </a>
     </div>
     {% if value == 0 or forloop.last %}
