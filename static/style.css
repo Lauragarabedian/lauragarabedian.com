@@ -60,6 +60,13 @@ a:visited {
     height: 65%;
 }
 
+.banner {
+    color: white;
+    background-color: maroon;
+    text-align: center;
+    font-size: small;
+}
+
 .main-doc {
     margin-top: 4rem;
     min-height: 100vh;
