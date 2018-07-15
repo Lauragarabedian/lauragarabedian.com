@@ -50,12 +50,19 @@ a:visited {
 }
 
 .nav-link {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    font-size: large;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.social-media-icons{
+    width: 65%;
+    height: 65%;
 }
 
 .main-doc {
     margin-top: 4rem;
+    min-height: 100vh;
 }
 
 
