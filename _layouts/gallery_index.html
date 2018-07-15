@@ -4,20 +4,15 @@ layout: page
 {% include header.html %}
 <h2>Gallery</h2>
 <hr />
+<div class="d-flex flex-row flex-wrap">
 {% for gallery in page.galleries %}
-{% assign value = forloop.index | modulo:3 %}
-{% if value == 1 %}
-<div class="row">
-{% endif %}
-<div class="col gallery-image">
-    <a href="{{ gallery['gallery'] }}">
-        <img class="gallery-best-image img-fluid" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
-    </a>
-    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-    {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
-</div><!-- end col-->
-{% if value == 0 or forloop.last %}
-</div><!-- end row-->
-{% endif %}
+    <div class="gallery-image">
+        <a href="{{ gallery['gallery'] }}">
+            <img class="gallery-best-image img-fluid" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+        </a>
+        <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+        {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
+    </div>
 {% endfor %}
+</div>
 {% include footer.html %}
