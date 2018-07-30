@@ -17,3 +17,14 @@ menu_resize();
 $(window).ready(menu_resize);
 
 $(window).resize(menu_resize);
+
+
+
+
+  $( document ).ready(function() {
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 300,
+        gutter: 10
+      });
+});
