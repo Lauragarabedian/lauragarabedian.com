@@ -45,7 +45,9 @@ a:visited {
     order: -1;
     display: flex;
     flex-direction: column;
-    height: 100vh
+    height: 100vh;
+    width: 18vw;
+    position: fixed;
 }
 
 .nav-link {
@@ -62,11 +64,20 @@ a:visited {
     background-color: maroon;
     text-align: center;
     font-size: small;
+    width: 100%;
 }
 
-.main-doc {
+.main-doc-standard {
     margin-top: 4rem;
     min-height: 100vh;
+    margin-left: 18vw;
+    max-width: 80vw;
+}
+
+.main-doc-mobile {
+    margin-top: 4rem;
+    min-height: 100vw;
+    max-width: 100vw;
 }
 
 .gallery-image {
