@@ -2,15 +2,18 @@ plugins:
   - jekyll-gallery-generator
 
 gallery:
-  dir: gallery
+  dir: galleries
   title: "Art"
   title_prefix: ""
   galleries:
-    fantasy:
-      name: "Fantasy"
+    Paintings:
+      name: "Paintings"
       best_image: SunSpots-cell-photo-562x800.jpg
-    treecreatures:
-      name: "Tree Creatures"
+    TreeCreatures:
+      name: "TreeCreatures"
       best_image: Equibark_LauraGarabedian.jpg
-    tribalizedcreatures:
-      name: "Tribalized Creatures"
+    Inkwork:
+      name: "Inkwork"
+    Studies:
+      name: "Studies"
+      best_image: Memories-of-Africa-Lions-Gaze.jpg
