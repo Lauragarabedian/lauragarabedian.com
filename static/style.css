@@ -21,8 +21,8 @@ a:visited {
 .contactbox {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .image-constraint {
@@ -63,7 +63,6 @@ a:visited {
     color: white;
     background-color: maroon;
     text-align: center;
-    font-size: small;
     width: 100%;
 }
 
@@ -79,6 +78,8 @@ a:visited {
     min-height: 100vw;
     max-width: 100vw;
 }
+
+
 
 .gallery-image {
     margin: .5rem
