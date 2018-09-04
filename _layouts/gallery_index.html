@@ -5,9 +5,9 @@ layout: page
 <h2>Gallery</h2>
 <hr />
 <div class="d-none d-md-block">
-    <div class="d-flex flex-row flex-wrap">
+    <div>
     {% for gallery in page.galleries reversed %}
-        <div class="gallery-image">
+        <div class="row">
             <a href="{{ gallery['gallery'] }}">
                 <img class="gallery-best-image img-fluid" src="/static/covers/{{ gallery['best_image'] }}">
             </a>
@@ -16,12 +16,14 @@ layout: page
     </div>
 </div>
 
-<div class="d-md-none d-flex flex-row flex-wrap">
+<div class="d-md-none">
 {% for gallery in page.galleries reversed %}
-    <div class="gallery-image">
-        <a href="{{ gallery['gallery'] }}">
-            <img class="gallery-best-image img-fluid" src="/static/covers/mobile/{{ gallery['best_image'] }}">
-        </a>
+    <div class="row">
+        <div class="col">
+            <a href="{{ gallery['gallery'] }}">
+                <img class="gallery-best-image img-fluid" src="/static/covers/mobile/{{ gallery['best_image'] }}">
+            </a>
+        </div>
     </div>
 {% endfor %}
 </div>
