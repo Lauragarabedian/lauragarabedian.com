@@ -114,6 +114,13 @@ a:visited {
     height: auto;
 }
 
+.shop_row {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+    
+
 
 
 /* ---- grid-item ---- */
