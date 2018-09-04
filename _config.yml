@@ -5,15 +5,19 @@ gallery:
   dir: galleries
   title: "Art"
   title_prefix: ""
+  sort_field: "date_time"
   galleries:
     Paintings:
       name: "Paintings"
-      best_image: SunSpots-cell-photo-562x800.jpg
+      best_image: paintings.jpg
     TreeCreatures:
       name: "TreeCreatures"
       best_image: Equibark_LauraGarabedian.jpg
+      hidden: true
     Inkwork:
       name: "Inkwork"
+      best_image: inkwork.jpg
     Studies:
       name: "Studies"
       best_image: Memories-of-Africa-Lions-Gaze.jpg
+      hidden: true
