@@ -1,5 +1,5 @@
 body {
-    font-family: 'Marcellus SC', serif;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     min-height: 100vh;
 }
 
@@ -108,11 +108,6 @@ a:visited {
     float: right;
 }
 
-.shop_row {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
 
 .shop_img {
     width: 100%;
