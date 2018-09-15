@@ -2,29 +2,29 @@
 # this is an empty front matter
 ---
 {% include header.html %}
-                <div class="row">
-                    <div class="col">
-                            Please feel free to email me at <a href="mailto:art@lauragarabedian.com"/>Art@LauraGarabedian.com</a> or use the contact form below:<br/>
-                    </div>
-                </div>
+    <div class="row d-flex justify-content-center" style="max-width: 90vw; margin-bottom: 1rem;">
+        <img style="max-width: 100%;" src="/static/contact_header.png"/>
+    </div>
 
-                <div class="row contactbox">
-                    <div class="col">
-                        <form action="https://formspree.io/stuart.alan.small@gmail.com" method="POST">
-                            <div class="form-group">
-                                    <label for="exampleInputPassword1">Name:</label>
-                                    <input type="text" class="form-control" id="name" name="name">
-                                </div>
-                            <div class="form-group">
-                                <label for="email">Email address:</label>
-                                <input type="email" class="form-control" name="_replyto" id="email" >
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea type="text" class="form-control" id="message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+    <div class="row contactbox">
+        <div class="col contactbox-internal">
+            <form action="https://formspree.io/stuart.alan.small@gmail.com" method="POST">
+                <div class="form-group">
+                        <label for="exampleInputPassword1">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" name="_replyto" id="email" >
                 </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea type="text" class="form-control" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: white;">
+                    <img src="/static/contact_button.png">
+                </button>
+            </form>
+        </div>
+    </div>
 {% include footer.html %}
