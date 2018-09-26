@@ -1,3 +1,7 @@
+collections:
+  front_gallery:
+    output: true
+
 plugins:
   - jekyll-gallery-generator
 
@@ -21,3 +25,4 @@ gallery:
       name: "Studies"
       best_image: Memories-of-Africa-Lions-Gaze.jpg
       hidden: true
+

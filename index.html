@@ -3,29 +3,14 @@
 ---
 {% include header.html %}
 <div class="grid">
-    <div class="grid-item" style="height: 427px;"><img src="/static/frontpage/19.jpg"/></div>
-    <div class="grid-item" style="height: 600px;"><img src="/static/frontpage/15.jpg"/></div>
-    <div class="grid-item" style="height: 427px;"><img src="/static/frontpage/1.jpg"/></div>
-    <div class="grid-item" style="height: 205px;"><img src="/static/frontpage/2.jpg"/></div>
-    <div class="grid-item" style="height: 236px;"><img src="/static/frontpage/3.jpg"/></div>
-    <div class="grid-item" style="height: 300px;"><img src="/static/frontpage/4.jpg"/></div>
-    <div class="grid-item" style="height: 218px;"><img src="/static/frontpage/6.jpg"/></div>
-    <div class="grid-item" style="height: 437px;"><img src="/static/frontpage/7.jpg"/></div>
-    <div class="grid-item" style="height: 297px;"><img src="/static/frontpage/8.jpg"/></div>
-    <div class="grid-item" style="height: 213px;"><img src="/static/frontpage/9.jpg"/></div>
-    <div class="grid-item" style="height: 380px;"><img src="/static/frontpage/10.jpg"/></div>
-    <div class="grid-item" style="height: 225px;"><img src="/static/frontpage/23.jpg"/></div>
-    <div class="grid-item" style="height: 386px;"><img src="/static/frontpage/11.jpg"/></div>
-    <div class="grid-item" style="height: 604px;"><img src="/static/frontpage/12.jpg"/></div>
-    <div class="grid-item" style="height: 420px;"><img src="/static/frontpage/13.jpg"/></div>
-    <div class="grid-item" style="height: 601px;"><img src="/static/frontpage/14.jpg"/></div>
-    <div class="grid-item" style="height: 300px;"><img src="/static/frontpage/16.jpg"/></div>
-    <div class="grid-item" style="height: 217px;"><img src="/static/frontpage/17.jpg"/></div>
-    <div class="grid-item" style="height: 604px;"><img src="/static/frontpage/18.jpg"/></div>
-    <div class="grid-item" style="height: 218px;"><img src="/static/frontpage/20.jpg"/></div>
-    <div class="grid-item" style="height: 211px;"><img src="/static/frontpage/21.jpg"/></div>
-    <div class="grid-item" style="height: 300px;"><img src="/static/frontpage/5.jpg"/></div>
-    <div class="grid-item" style="height: 211px;"><img src="/static/frontpage/22.jpg"/></div>
-    <div class="grid-item" style="height: 215px;"><img src="/static/frontpage/24.jpg"/></div>
+    {% for entry in site.front_gallery %}
+    
+    <div class="grid-item" style="height: {{entry.height}};">
+        <a href="{{entry.url}}">
+            <img src="/static/frontpage/thumb/{{entry.name}}.jpg"/>
+        </a>
+    </div>
+    {% endfor %}
+
 </div> 
 {% include footer.html %}
