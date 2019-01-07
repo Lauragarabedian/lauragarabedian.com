@@ -15,11 +15,15 @@ $(window).ready(on_resize);
 
 $(window).resize(on_resize);
 
+$( window ).on( "load", function(){
+    $('.grid').masonry('layout');
+} );
+
 $( document ).ready(function() {
-    on_resize();
-    $('.grid').masonry({
+    $masnory = $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: 300,
         gutter: 10
     });
+
 });

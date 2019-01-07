@@ -2,14 +2,12 @@
 layout: page
 ---
 {% include header.html %}
-<div class="d-flex flex-row flex-wrap">
-{% for image in page.images %}
-    <div class="gallery-image">
-        <a name="{{ image.name }}"></a>
-        <a href="{{ image.name }}">
-            <img class="img-fluid" src="thumbs/{{ image.name }}" />
-        </a>
-    </div>
-{% endfor %}
+<div class="grid">
+    {% for image in page.images %}
+
+    <a href="{{ image.name }}" >
+        <img class="grid-item" src="thumbs/{{ image.name }}"/>
+    </a>
+    {% endfor %}
 </div>
 {% include footer.html %}
