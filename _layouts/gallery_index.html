@@ -5,11 +5,13 @@ layout: page
 <div class="d-none d-md-block">
     <div>
     {% for gallery in page.galleries reversed %}
+        {% if gallery.hidden != true %}
         <div class="row">
             <a href="{{ gallery['gallery'] }}">
                 <img class="gallery-best-image img-fluid" src="/static/covers/{{ gallery['best_image'] }}">
             </a>
         </div>
+	{% endif %}
     {% endfor %}
     </div>
 </div>

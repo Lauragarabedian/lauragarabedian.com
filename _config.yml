@@ -14,15 +14,17 @@ gallery:
     Paintings:
       name: "Paintings"
       best_image: paintings.jpg
-    TreeCreatures:
-      name: "TreeCreatures"
-      best_image: Equibark_LauraGarabedian.jpg
-      hidden: true
+      sort_reverse: true
     Inkwork:
       name: "Inkwork"
       best_image: inkwork.jpg
-    Studies:
-      name: "Studies"
-      best_image: Memories-of-Africa-Lions-Gaze.jpg
+      sort_reverse: true
+    Submissions:
+      name: "Submissions"
       hidden: true
+      sort_reverse: true
+    TreeCreatures:
+      name: "TreeCreatures"
+      hidden: true
+      sort_reverse: true
 
