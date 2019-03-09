@@ -19,11 +19,14 @@ $( window ).on( "load", function(){
     $('.grid').masonry('layout');
 } );
 
+
 $( document ).ready(function() {
     $masnory = $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: 300,
         gutter: 10
     });
-
+    $(".grid-item").on( "load", function(){
+        $('.grid').masonry('layout');
+    } );
 });
