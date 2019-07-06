@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-13049001-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-13049001-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/photoswipe.css">
+    <link rel="stylesheet" href="/default-skin.css">
+    <title>Fantasy and Creature Art | Laura Garabedian</title>
+</head>
+<body class="bg-light d-flex flex-column">
+    <script src="/jquery-3.3.1.slim.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/masonry.pkgd.min.js"></script>
+    <script src="/photoswipe.min.js"></script>
+    <script src="/photoswipe-ui-default.min.js"></script>
+    <script src="/site.js"></script>
+    <a href="http://eepurl.com/dFTmHP">
+        <div class="banner">
+            Get notified when new creatures fly, when events are coming, or if I have sales - Sign up for my newsletter
+            here
+        </div>
+    </a>
+    <nav id="topnav" class="d-md-none navbar navbar-expand-md navbar-light bg-light">
+        <div class="d-flex flex-row justify-content-between" style="width: 100%;">
+            <a class="navbar-brand" href="/"><img src="/logo.png" style="max-width: 60%;"
+                    alt="The Art Of Laura Garabedian" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/galleries">The Art</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">The Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shop">Shop and more...</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main" class="container-fluid">
+        <div class="d-flex">
+            <div id="sidebar" class="d-none d-md-flex sidebar">
+                <a href="/">
+                    <div class="logo media">
+                        <img src="/logo.png" class="mr-2 img-fluid" alt="The Art Of Laura Garabedian" />
+                    </div>
+                </a>
+
+                <div class="media nav-link">
+                    <a href="/galleries"><img src="/art.png" class="mr-2 img-fluid" alt="The Art" /></a>
+                </div>
+                <div class="media nav-link">
+                    <a href="/about"><img src="/artist.png" class="mr-2 img-fluid" alt="The Creator" /></a>
+                </div>
+                <div class="media nav-link">
+                    <a href="/shop"><img src="/shop.png" class="mr-2 img-fluid" alt="Shop and more..." /></a>
+                </div>
+                <div class="media nav-link">
+                    <a href="/contact"><img src="/contact.png" class="mr-2 img-fluid" alt="Contact" /></a>
+                </div>
+                <div class="d-flex sidebarspacer"></div>
+                <div class="d-flex justify-content-center m-4">
+                    <img src="/bunny.png" alt="Bunny art" />
+                </div>
+                <div class="d-flex justify-content-center flex-row">
+                    <a href="https://www.instagram.com/lauragarabedian/">
+                        <img class="social-media-icons" src="/insta.svg" alt="Instagram" />
+                    </a>
+                    <a href="https://www.facebook.com/Laura.W.Garabedian">
+                        <img class="social-media-icons" src="/fb.svg" alt="Facebook" />
+                    </a>
+                    <a href="https://twitter.com/lauragarabedian">
+                        <img class="social-media-icons" src="/twitter.svg" alt="Twitter" />
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-center m-4">
+                    <a href="https://www.patreon.com/bePatron?u=109572">
+                        <img src="/patron.png" alt="Patreon" />
+                    </a>
+                </div>
+                <div>
+                    <!-- to prevent overlap with copyright-->
+                    <br />
+                </div>
+            </div>
+
+
+            <div id="main-doc" class="col-12 main-doc main-doc-padding">
+                <div class="grid">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-right">
+            Copyright © 2019 Laura Garabedian
+        </div>
+    </div>
+</body>
+
+</html>

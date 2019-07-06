@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-none d-md-block">
+    <div>
+    {% for gallery in section.extra.galleries | reverse %}
+        <div class="row">
+            <a href="galleries/{{ gallery }}">
+                <img class="gallery-best-image img-fluid" src="/covers/{{ gallery }}.jpg">
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<div class="d-md-none">
+    {% for gallery in section.extra.galleries | reverse %}
+    <div class="row">
+        <div class="col">
+            <a href="galleries/{{ gallery }}">
+                <img class="gallery-best-image img-fluid" src="/covers/mobile/{{ gallery }}.jpg">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

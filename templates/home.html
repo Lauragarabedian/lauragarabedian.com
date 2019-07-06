@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "shadowbox.html" %}
+<div class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for asset in section.assets | sort %}
+    <figure class="grid-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        {% set meta = get_image_metadata(path="./" ~asset) %}
+        <a href="{{ get_url(path=asset) }}" itemprop="contentUrl" data-size="{{ meta['width'] }}x{{ meta['height'] }}">
+            <img src="{{ resize_image(path="./" ~ asset, width=300, op="fit_width", quality=100) }}" itemprop="thumbnail" />
+        </a>
+    </figure>
+    {% endfor %}
+</div>
+
+{% endblock content %}
